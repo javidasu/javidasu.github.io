@@ -71,7 +71,6 @@ if ('serviceWorker' in navigator) {
             console.log("Error Adding: ", e);
         };
     };
-
     html5rocks.indexedDB.deleteTodo = function(id) {
         var db = html5rocks.indexedDB.db;
         var trans = db.transaction(["todo"], "readwrite");
